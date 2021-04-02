@@ -4,17 +4,19 @@ const http = require('http');
 // create a server
 const server = http.createServer(function(req, res) {
     // Headers
-    res.writeHead(200, { 'Content-Type':'application/json' });
+    res.writeHead(200, { 'Content-Type':'text/plain' });
+    // res.writeHead(200, { 'Content-Type':'application/json' });
     // res.writeHead(200, { 'Content-Type':'text/html' });
 
     // send back some info
-    res.end(`
-        {
-            "name": "Biodun Odumosu",
-            "country": "Nigeria",
-            "hobby": ["hiking", "swimming"]
-        }
-    `);
+    res.end('Welcome to Zuri Internship. This is my first nodejs task');
+    // res.end(`
+    //     {
+    //         "name": "Biodun Odumosu",
+    //         "country": "Nigeria",
+    //         "hobby": ["hiking", "swimming"]
+    //     }
+    // `);
     // res.end(`
     //     <html>
     //         <body style="background: #000; text-align: center; color: #EDC9AF; margin-top: 20px;">
